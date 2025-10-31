@@ -14,8 +14,13 @@ export const getEntries = async (): Promise<Entry[]> => {
   const data = await api('read', { sheet: 'Entries' })
   if (!data.values || data.values.length <= 1) return []
   return data.values.slice(1).map((r: any[]) => ({
-    id: r[0], category: r[1], subcategory: r[2], content: r[3],
-    references: r[4], tags: r[5]?.split(',').map((t: string) => t.trim()) || [], createdAt: r[6]
+    id: r[0],
+    category: r[1],
+    subcategory: r[2],
+    content: r[3],
+    references: r[4],
+    tags: r[5]?.split(',').map((t: string) => t.trim()) || [],
+    createdAt: r[6]
   }))
 }
 
