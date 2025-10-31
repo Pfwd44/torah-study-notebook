@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Torah Study Notebook</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sefira:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body { font-family: 'Sefira', sans-serif; background: #f5f7fa; padding: 1rem; }
+      #root { max-width: 800px; margin: 0 auto; }
+      .hebrew { direction: rtl; text-align: right; }
+      button, select, input, textarea { width: 100%; padding: 0.75rem; margin: 0.5rem 0; border: 1px solid #ddd; border-radius: 8px; }
+      button { background: #1a73e8; color: white; font-weight: bold; cursor: pointer; }
+      .entry { background: white; padding: 1rem; margin: 1rem 0; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+      .tag { background: #e3f2fd; color: #1976d2; padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.8rem; margin: 0.25rem; display: inline-block; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
